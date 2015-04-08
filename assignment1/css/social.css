@@ -24,6 +24,8 @@ body {
 
 .social-info p {
   margin: 0;
+  font-weight: 400;
+  color: #fff;
 }
 
 .social-info .icon {
@@ -44,8 +46,6 @@ body {
 
 .facebook-section p {
   font-family: 'Source Sans Pro', sans-serif;
-  font-weight: 400;
-  color: #fff;
 }
 
 .social-info .facebook-icon {
@@ -58,9 +58,6 @@ body {
 
 .twitter-section p {
   font-family: 'Open Sans', sans-serif;
-  font-weight: 400;
-  color: #fff;
-  text-align: left;
 }
 
 .social-info .twitter-icon {
@@ -73,9 +70,6 @@ body {
 
 .instagram-section p {
   font-family: 'Roboto', sans-serif;
-  font-weight: 400;
-  color: #fff;
-  text-align: left;
 }
 
 .social-info .instagram-icon {
