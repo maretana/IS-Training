@@ -31,6 +31,11 @@ body {
   position: absolute;
   bottom: 15px;
   left: 50%;
+  display: inline-block;
+  background: url('../img/social-icons.png') no-repeat;
+  background-size: 224px 63.04px;
+  width: 32px;
+  height: 31.06px;
 }
 
 .facebook-section {
@@ -43,12 +48,8 @@ body {
   color: #fff;
 }
 
-.facebook-icon {
-  display: inline-block;
-  background: url('../img/social-icons.png') no-repeat 0 0;
-  background-size: 224px 63.04px;
-  width: 32px;
-  height: 31.06px;
+.social-info .facebook-icon {
+  background-position: 0 0;
 }
 
 .twitter-section {
@@ -62,12 +63,8 @@ body {
   text-align: left;
 }
 
-.twitter-icon {
-  display: inline-block;
-  background: url('../img/social-icons.png') no-repeat -32px 0;
-  background-size: 224px 63.04px;
-  width: 32px;
-  height: 31.06px;
+.social-info .twitter-icon {
+  background-position: -32px 0;
 }
 
 .instagram-section {
@@ -81,10 +78,6 @@ body {
   text-align: left;
 }
 
-.instagram-icon {
-  display: inline-block;
-  background: url('../img/social-icons.png') no-repeat -96px 0;
-  background-size: 224px 63.04px;
-  width: 32px;
-  height: 31.06px;
+.social-info .instagram-icon {
+  background-position: -96px 0;
 }
