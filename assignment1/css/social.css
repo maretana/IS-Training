@@ -1,0 +1,65 @@
+body {
+  text-align: center;
+  display: table;
+  width: 100%;
+}
+
+.content {
+  display: table-cell;
+  text-align: center;
+}
+
+.social-info {
+  display: inline-block;
+  margin: 0 20px 0 20px;
+  min-height: 270px;
+  width: 20%;
+  text-align: center;
+  vertical-align: top;
+  position: relative;
+  border: none;
+  padding: 15px;
+}
+
+.social-info p {
+  margin: 0;
+}
+
+.social-info img {
+  margin: 0;
+  position: absolute;
+  bottom: 15px;
+}
+
+.facebook-section {
+  background: #3b5998;
+}
+
+.facebook-section p {
+  font-family: 'Source Sans Pro', sans-serif;
+  font-weight: 400;
+  color: #fff;
+  text-align: left;
+}
+
+.twitter-section {
+  background: #4099ff;
+}
+
+.twitter-section p {
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 400;
+  color: #fff;
+  text-align: left;
+}
+
+.instagram-section {
+  background: #663300;
+}
+
+.instagram-section p {
+  font-family: 'Roboto', sans-serif;
+  font-weight: 400;
+  color: #fff;
+  text-align: left;
+}
