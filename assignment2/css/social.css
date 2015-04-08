@@ -1,22 +1,17 @@
-body {
-  text-align: center;
-  display: table;
-}
-
 .content {
-  display: table-cell;
-  min-width: 730px;
+  margin: auto;
+  /*min-width: 730px;*/
   text-align: center;
 }
 
 .social-info {
-  display: inline-block;
-  margin: 0 50px 0 50px;
-  height: 470px;
-  width: 15%;
-  min-width: 95px;
+  /*display: inline-block;*/
+  margin: 0 5% 15px 5%;
+  height: 380px;
+  /*width: 15%;
+  min-width: 95px;*/
   text-align: left;
-  vertical-align: top;
+  /*vertical-align: top;*/
   position: relative;
   border: none;
   padding: 15px;
@@ -25,19 +20,20 @@ body {
 .social-info p {
   margin: 0;
   font-weight: 400;
+  font-size: 18px;
   color: #fff;
 }
 
 .social-info .icon {
-  margin: 0 0 0 -15px;
+  margin: 0 0 0 -32px;
   position: absolute;
   bottom: 15px;
   left: 50%;
-  display: inline-block;
+  /*display: inline-block;*/
   background: url('../img/social-icons.png') no-repeat;
-  background-size: 224px 63.04px;
-  width: 32px;
-  height: 31.06px;
+  background-size: 448px 126.08px;
+  width: 64px;
+  height: 62.12px;
 }
 
 .facebook-section {
@@ -61,7 +57,7 @@ body {
 }
 
 .social-info .twitter-icon {
-  background-position: -32px 0;
+  background-position: -64px 0;
 }
 
 .instagram-section {
@@ -73,5 +69,5 @@ body {
 }
 
 .social-info .instagram-icon {
-  background-position: -96px 0;
+  background-position: -192px 0;
 }
