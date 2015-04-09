@@ -7,7 +7,8 @@
 .social-info {
   /*display: inline-block;*/
   margin: 0 5% 15px 5%;
-  height: 380px;
+  height: 290px;
+  min-width: 200px;
   /*width: 15%;
   min-width: 95px;*/
   text-align: left;
@@ -20,20 +21,19 @@
 .social-info p {
   margin: 0;
   font-weight: 400;
-  font-size: 18px;
-  color: #fff;
+  font-size: 14px;
 }
 
 .social-info .icon {
-  margin: 0 0 0 -32px;
+  margin: 0 0 0 -16px;
   position: absolute;
   bottom: 15px;
   left: 50%;
   /*display: inline-block;*/
   background: url('../img/social-icons.png') no-repeat;
-  background-size: 448px 126.08px;
-  width: 64px;
-  height: 62.12px;
+  background-size: 224px 63.04px;
+  width: 32px;
+  height: 31.06px;
 }
 
 .facebook-section {
@@ -42,6 +42,7 @@
 
 .facebook-section p {
   font-family: 'Source Sans Pro', sans-serif;
+  color: #f42929;
 }
 
 .social-info .facebook-icon {
@@ -54,10 +55,11 @@
 
 .twitter-section p {
   font-family: 'Open Sans', sans-serif;
+  color: #782740;
 }
 
 .social-info .twitter-icon {
-  background-position: -64px 0;
+  background-position: -32px 0;
 }
 
 .instagram-section {
@@ -66,8 +68,36 @@
 
 .instagram-section p {
   font-family: 'Roboto', sans-serif;
+  color: #27782d;
 }
 
 .social-info .instagram-icon {
-  background-position: -192px 0;
+  background-position: -96px 0;
+}
+
+@media screen and (min-width: 992px) {
+
+  .social-info {
+    height: 380px;
+  }
+
+  .social-info p {
+    font-size: 18px;
+    color: #fff;
+  }
+
+  .social-info .icon {
+    margin: 0 0 0 -32px;
+    background-size: 448px 126.08px;
+    width: 64px;
+    height: 62.12px;
+  }
+
+  .social-info .twitter-icon {
+    background-position: -64px 0;
+  }
+
+  .social-info .instagram-icon {
+    background-position: -192px 0;
+  }
 }
