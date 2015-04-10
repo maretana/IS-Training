@@ -17,11 +17,11 @@
     margin: 34px 0 0 18px;
     padding: 0;
     width: 90%;
+    position: relative;
 
     .header-nav{
         margin: 27px 0 0 0;
         padding: 0;
-        position: relative;
 
         ul {
             list-style: none;
@@ -29,14 +29,15 @@
             padding: 0;
 
             @media screen and (min-width: 600px) {
-                @include bottom-border;
                 @include top-border;
-                position: absolute;
-                top: 50%;
-                right: 20px;
             }
 
             li {
+                display: block;
+
+                @media screen and (min-width: 600px) {
+                    display: inline-block;
+                }
                 .header-nav-link {
                     display: block;
                     @include text;
@@ -51,21 +52,9 @@
                     }
 
                     @media screen and (min-width: 600px) {
-                        display: inline-block;
-                        overflow: hidden;
                         border: none;
                     }
                 }
-
-                @media screen and (min-width: 600px) {
-                    display: inline;
-                }
-            }
-        }
-
-        #logo {
-            @media screen and (min-width: 600px) {
-                float: left;
             }
         }
     }
