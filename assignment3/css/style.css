@@ -63,10 +63,19 @@
   text-decoration: none;
 }
 
-/* line 18, ../scss/partials/_footer.scss */
-.footer-container footer {
+/* line 16, ../scss/partials/_footer.scss */
+footer {
+  background-color: black;
+  text-align: right;
+  padding: 20px 15% 22px 0;
+}
+/* line 20, ../scss/partials/_footer.scss */
+footer .footer-content {
+  font-family: 'Open Sans', sans-serif;
+  font-weight: normal;
+  font-size: 13px;
   color: white;
-  padding: 20px 0;
+  line-height: 1.7em;
 }
 
 /* line 16, ../scss/partials/_content.scss */
