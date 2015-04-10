@@ -25,3 +25,12 @@
     margin: 0;
     @include bottom-border;
 }
+
+.global-container {
+    width: 100%;
+    margin: auto;
+
+    @media screen and (min-width: 600px) {
+        width: 80%;
+    }
+}
