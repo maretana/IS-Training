@@ -37,7 +37,6 @@
 }
 
 .info {
-    float: left;
     .info-title {
         @include text(22px, 600, #c33);
     }
