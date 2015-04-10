@@ -40,3 +40,14 @@ $font-regular   : 'IntelligentSense', Verdana, Arial, sans;
         background: url($imageUrl) no-repeat $leftActive $topActive;
     }
 }
+
+@mixin text ($size: 17px, $weight: normal, $color: #666) {
+    font-family: 'Open Sans', sans-serif;
+    font-weight: $weight;
+    font-size: $size;
+    color: $color;
+}
+
+@mixin bottom-border {
+    border-bottom: 1px solid #c8c8c8;
+}

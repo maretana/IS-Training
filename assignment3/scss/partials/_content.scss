@@ -13,84 +13,26 @@
 //                of the site, divided by section.
 // 
 
-html,
-button,
-input,
-select,
-textarea {
-    color: #221;
-}
-
-body {
-    font-size: 1em;
-    line-height: 1.4;
-}
-
-::-moz-selection {
-    background: #b3d4fc;
-    text-shadow: none;
-}
-
-::selection {
-    background: #b3d4fc;
-    text-shadow: none;
-}
-
-hr {
-    display: block;
-    height: 1px;
-    margin: 1em 0;
-    padding: 0;
-
-    border: 0;
-    border-top: 1px solid #ccc;
-}
-
-h1 {
-    font-family: $font-regular;
-}
-
-img {
-    vertical-align: middle;
-}
-
-fieldset {
-    border: 0;
-    margin: 0;
-    padding: 0;
-}
-
-textarea {
-    resize: vertical;
-}
-
-body {
-    font: 16px/26px Helvetica, Helvetica Neue, Arial;
-}
-
-.wrapper {
-    width: 90%;
-    margin: 0 5%;
-}
-
-/* ==============
-    MOBILE: Main
-   ============== */
-
-.main {
-    padding: 30px 0;
-
-    article {
-
-        h1 {
-            font-size: 2em;
+.intro {
+    @include bottom-border;
+    width: 100%;
+    margin: 32px 0 0 0;
+    .intro-quote {
+        @include text(34px, 600);
+        line-height: 1.5em;
+        padding: 10px;
+        margin: 0 0 0 0;
+        .intro-quote-author {
+            @include text(25px, inherit);
+            line-height: 1.5em;
+            margin-left: 10px;
         }
     }
 
-    aside {
-        color: white;
-        padding: 0px 5% 10px;
+    .intro-subquote {
+        @include text(15px, normal);
+        line-height: 1.5em;
+        margin: 15px 0 0 0;
+        padding: 10px;
     }
 }
-
-
