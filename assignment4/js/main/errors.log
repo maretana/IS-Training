@@ -1,3 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <jslint>
+	<file name="pokemon.js">
+		<issue line="1" char="1" reason="Use the function form of &quot;use strict&quot;." evidence="&apos;use strict&apos;;" severity="W" />
+	</file>
 </jslint>
+

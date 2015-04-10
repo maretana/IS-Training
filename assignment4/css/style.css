@@ -18,11 +18,10 @@
    =================== */
 @font-face {
   font-family: 'IntelligentSense';
-  src: url("fonts/tgl-31034-1-normschrift.ttf") format("truetype");
+  src: url("../fonts/tgl-31034-1-normschrift.ttf") format("truetype");
   font-weight: normal;
   font-style: normal;
 }
-
 /* line 27, ../scss/partials/_general.scss */
 .clear {
   clear: both;
@@ -36,13 +35,13 @@
   border-bottom: 20px solid #e44d26;
 }
 
-/* line 40, ../scss/partials/_general.scss */
+/* line 39, ../scss/partials/_general.scss */
 .footer-container,
 .main aside {
   border-top: 20px solid #e44d26;
 }
 
-/* line 46, ../scss/partials/_general.scss */
+/* line 44, ../scss/partials/_general.scss */
 .header-container,
 .footer-container,
 .main aside {
@@ -91,7 +90,7 @@
   width: 1px;
 }
 
-/* line 90, ../scss/partials/_general.scss */
+/* line 89, ../scss/partials/_general.scss */
 .visuallyhidden.focusable:active,
 .visuallyhidden.focusable:focus {
   clip: auto;
@@ -107,7 +106,7 @@
   visibility: hidden;
 }
 
-/* line 104, ../scss/partials/_general.scss */
+/* line 103, ../scss/partials/_general.scss */
 .clearfix:before,
 .clearfix:after {
   content: " ";
@@ -141,7 +140,7 @@ nav a {
   color: white;
   background: #e44d26;
 }
-/* line 38, ../scss/partials/_header.scss */
+/* line 37, ../scss/partials/_header.scss */
 nav a:hover,
 nav a:visited {
   color: white;
@@ -157,7 +156,7 @@ nav a:hover {
   padding: 20px 0;
 }
 
-/* line 20, ../scss/partials/_content.scss */
+/* line 16, ../scss/partials/_content.scss */
 html,
 button,
 input,
@@ -321,7 +320,7 @@ body {
   /* ====================
       WIDE: CSS3 Effects
      ==================== */
-  /* line 114, ../scss/partials/_media-queries.scss */
+  /* line 113, ../scss/partials/_media-queries.scss */
   .header-container,
   .main aside {
     -webkit-box-shadow: 0 5px 10px #aaa;
@@ -381,7 +380,7 @@ body {
     text-shadow: none !important;
   }
 
-  /* line 175, ../scss/partials/_media-queries.scss */
+  /* line 174, ../scss/partials/_media-queries.scss */
   a,
   a:visited {
     text-decoration: underline;
@@ -400,14 +399,14 @@ body {
   /*
    * Don't show links for images, or javascript/internal links
    */
-  /* line 193, ../scss/partials/_media-queries.scss */
+  /* line 191, ../scss/partials/_media-queries.scss */
   .ir a:after,
   a[href^="javascript:"]:after,
   a[href^="#"]:after {
     content: "";
   }
 
-  /* line 198, ../scss/partials/_media-queries.scss */
+  /* line 197, ../scss/partials/_media-queries.scss */
   pre,
   blockquote {
     border: 1px solid #999;
@@ -420,7 +419,7 @@ body {
     /* h5bp.com/t */
   }
 
-  /* line 208, ../scss/partials/_media-queries.scss */
+  /* line 207, ../scss/partials/_media-queries.scss */
   tr,
   img {
     page-break-inside: avoid;
@@ -433,9 +432,8 @@ body {
 
   @page {
     margin: 0.5cm;
-}
-
-  /* line 222, ../scss/partials/_media-queries.scss */
+  }
+  /* line 220, ../scss/partials/_media-queries.scss */
   p,
   h2,
   h3 {
@@ -443,7 +441,7 @@ body {
     widows: 3;
   }
 
-  /* line 228, ../scss/partials/_media-queries.scss */
+  /* line 227, ../scss/partials/_media-queries.scss */
   h2,
   h3 {
     page-break-after: avoid;
