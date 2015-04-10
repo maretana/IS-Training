@@ -22,6 +22,12 @@
   margin: auto;
 }
 
+/* line 24, ../scss/partials/_general.scss */
+.row {
+  margin: 0;
+  border-bottom: 1px solid #c8c8c8;
+}
+
 /* line 16, ../scss/partials/_header.scss */
 .header-container {
   margin: 34px 0 0 18px;
@@ -66,10 +72,9 @@
 /* line 16, ../scss/partials/_content.scss */
 .intro {
   border-bottom: 1px solid #c8c8c8;
-  width: 100%;
-  margin: 32px 0 0 0;
+  margin: 27px 0 0 0;
 }
-/* line 20, ../scss/partials/_content.scss */
+/* line 19, ../scss/partials/_content.scss */
 .intro .intro-quote {
   font-family: 'Open Sans', sans-serif;
   font-weight: 600;
@@ -77,9 +82,9 @@
   color: #666;
   line-height: 1.5em;
   padding: 10px;
-  margin: 0 0 0 0;
+  margin: 0;
 }
-/* line 25, ../scss/partials/_content.scss */
+/* line 24, ../scss/partials/_content.scss */
 .intro .intro-quote .intro-quote-author {
   font-family: 'Open Sans', sans-serif;
   font-weight: inherit;
@@ -88,7 +93,7 @@
   line-height: 1.5em;
   margin-left: 10px;
 }
-/* line 32, ../scss/partials/_content.scss */
+/* line 31, ../scss/partials/_content.scss */
 .intro .intro-subquote {
   font-family: 'Open Sans', sans-serif;
   font-weight: normal;
@@ -97,6 +102,92 @@
   line-height: 1.5em;
   margin: 15px 0 0 0;
   padding: 10px;
+}
+
+/* line 39, ../scss/partials/_content.scss */
+.info {
+  float: left;
+}
+/* line 41, ../scss/partials/_content.scss */
+.info .info-title {
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 600;
+  font-size: 22px;
+  color: #c33;
+}
+/* line 45, ../scss/partials/_content.scss */
+.info .info-content {
+  font-family: 'Open Sans', sans-serif;
+  font-weight: normal;
+  font-size: 15px;
+  color: #575757;
+}
+/* line 49, ../scss/partials/_content.scss */
+.info .info-image {
+  background-color: white;
+  border: 1px solid #d6d6d6;
+  float: left;
+  margin: 16px 13px 8px 0;
+  padding: 8px;
+}
+/* line 57, ../scss/partials/_content.scss */
+.info .info-button {
+  font-family: 'Open Sans', sans-serif;
+  font-weight: normal;
+  font-size: 14px/100%;
+  color: white;
+  background-color: black;
+  border-radius: 5px;
+  transition: all .2s ease-in-out;
+  text-align: center;
+  display: inline-block;
+  padding: 12px 18px;
+  margin-top: 14px;
+}
+/* line 66, ../scss/partials/_content.scss */
+.info .info-button:hover {
+  background-color: #333;
+}
+
+/* line 72, ../scss/partials/_content.scss */
+.section-title {
+  font-family: 'Open Sans', sans-serif;
+  font-weight: normal;
+  font-size: 22px;
+  color: #c33;
+}
+
+/* line 76, ../scss/partials/_content.scss */
+.article {
+  width: 92%;
+  margin: auto;
+}
+/* line 79, ../scss/partials/_content.scss */
+.article .article-title {
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 600;
+  font-size: 14px;
+  color: #666;
+}
+/* line 82, ../scss/partials/_content.scss */
+.article .article-content {
+  font-family: 'Open Sans', sans-serif;
+  font-weight: normal;
+  font-size: 15px;
+  color: #666;
+  line-height: 1.7em;
+}
+/* line 85, ../scss/partials/_content.scss */
+.article .article-content .quote {
+  background: #ededed;
+  border: 1px solid #C8C8C8;
+  color: #c33;
+  font-family: "Palatino Linotype", Palatino, Palladio, "URW Palladio L", "Book Antiqua", Baskerville, "Bookman Old Style", "Bitstream Charter", "Nimbus Roman No9 L", Garamond, "Apple Garamond", "ITC Garamond Narrow", "New Century Schoolbook", "Century Schoolbook", "Century Schoolbook L", Georgia, serif;
+  font-weight: bold;
+  font-size: 15px;
+  width: 96%;
+  margin: 0;
+  padding: 31px 45px;
 }
 
 /* ==========================================================================
