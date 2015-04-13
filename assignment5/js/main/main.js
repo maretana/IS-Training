@@ -74,7 +74,6 @@ var IntSenseNamespace = window.IntSenseNamespace || {};
             var button = $(this).find('.profile-image-button');
             var content = $(this).find('.profile-content');
             button.click(function(event){
-                console.log('click');
                 content.toggle();
                 var newText = button.text() === 'Hide' ? 'Show' : 'Hide';
                 button.text(newText);

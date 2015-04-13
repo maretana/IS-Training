@@ -167,8 +167,24 @@ nav a:hover {
 /* line 25, ../scss/partials/_content.scss */
 .profiles .profile-content {
   display: none;
+  margin-left: 25px;
+  float: left;
 }
-/* line 29, ../scss/partials/_content.scss */
+/* line 30, ../scss/partials/_content.scss */
+.profiles .profile-content .profile-content-table {
+  display: table;
+  font-size: 20px;
+  border-spacing: 60px 62px;
+}
+/* line 35, ../scss/partials/_content.scss */
+.profiles .profile-content .profile-content-table .profile-content-table-row {
+  display: table-row;
+}
+/* line 38, ../scss/partials/_content.scss */
+.profiles .profile-content .profile-content-table .profile-content-table-row .profile-content-table-column {
+  display: table-cell;
+}
+/* line 45, ../scss/partials/_content.scss */
 .profiles .profile-image-container {
   border-style: solid;
   border-width: 2px;
@@ -176,13 +192,14 @@ nav a:hover {
   display: inline-block;
   position: relative;
   background-color: #000;
+  float: left;
 }
-/* line 37, ../scss/partials/_content.scss */
+/* line 54, ../scss/partials/_content.scss */
 .profiles .profile-image-container .profile-image {
   width: 300px;
   height: auto;
 }
-/* line 42, ../scss/partials/_content.scss */
+/* line 59, ../scss/partials/_content.scss */
 .profiles .profile-image-container .profile-image-button {
   background: #dedede;
   font-size: 30px;
@@ -195,12 +212,12 @@ nav a:hover {
   color: #222;
   cursor: pointer;
 }
-/* line 54, ../scss/partials/_content.scss */
+/* line 71, ../scss/partials/_content.scss */
 .profiles .profile-image-container .profile-image-button:hover {
   background: #ebebeb;
   color: #2f2f2f;
 }
-/* line 60, ../scss/partials/_content.scss */
+/* line 77, ../scss/partials/_content.scss */
 .profiles .profile-image-container .ranking {
   position: absolute;
   top: 10px;

@@ -36,44 +36,25 @@
                             <span class="profile-image-button">Show</span>
                         </div>
                         <div class="profile-content">
-                            <p>
-                                Handle: {{handle}}
-                            </p>
-                            <p>
-                                Id: {{id}}
-                            </p>
-                            <p>
-                                Image: {{image}}
-                            </p>
-                            <p>
-                                Name: {{name}}
-                            </p>
-                            <p>
-                                Pop: {{pop}}
-                            </p>
-                            <p>
-                                ProfileImage: {{profileImage}}
-                            </p>
-                            {{#stats}}
-                            <p>
-                                Followers: {{followers}}
-                            </p>
-                            <p>
-                                Tweets: {{tweets}}
-                            </p>
-                            <p>
-                                Retweets: {{retweets}}
-                            </p>
-                            {{/stats}}
-                            <p>
-                                Time: {{time}}
-                            </p>
-                            <p>
-                                Twitter Id: {{twitter_id}}
-                            </p>
-                            <p>
-                                Volume: {{volume}}
-                            </p>
+                            <div class="profile-content-table">
+                                {{#stats}}
+                                <div class="profile-content-table-row">
+                                    <span class="profile-content-table-column">Tweets:</span>
+                                    <span class="profile-content-table-column">{{tweets}}</span>
+                                </div>
+                                <div class="profile-content-table-row">
+                                    <span class="profile-content-table-column">Followers:</span>
+                                    <span class="profile-content-table-column">{{followers}}</span>
+                                </div>
+                                <div class="profile-content-table-row">
+                                    <span class="profile-content-table-column">Retweets:</span>
+                                    <span class="profile-content-table-column">{{retweets}}</span>
+                                    <a class="profile-content-table-column" href="https://twitter.com/account/redirect_by_id/{{../handle}}">
+                                        [{{../handle}}]
+                                    </a>
+                                </div>
+                                {{/stats}}
+                            </div>
                         </div>
                     </section>
                 {{/each}}
