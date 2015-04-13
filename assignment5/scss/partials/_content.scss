@@ -13,84 +13,56 @@
 //                of the site, divided by section.
 // 
 
-html,
-button,
-input,
-select,
-textarea {
-    color: #221;
-}
+.profiles {
+    .profile-container {
+        border-style: solid;
+        border-width: 5px;
+        border-radius: 5px;
+        padding: 20px;
+        display: inline-block;
+    }
 
-body {
-    font-size: 1em;
-    line-height: 1.4;
-}
+    .profile-content {
+        display: none;
+    }
 
-::-moz-selection {
-    background: #b3d4fc;
-    text-shadow: none;
-}
+    .profile-image-container{
+        border-style: solid;
+        border-width: 2px;
+        border-color: #6e6e6e;
+        display: inline-block;
+        position: relative;
+        background-color: #000;
 
-::selection {
-    background: #b3d4fc;
-    text-shadow: none;
-}
+        .profile-image {
+            width: 300px;
+            height: auto;
+        }
 
-hr {
-    display: block;
-    height: 1px;
-    margin: 1em 0;
-    padding: 0;
+        .profile-image-button {
+            background: #dedede;
+            font-size: 30px;
+            padding: 7px;
+            position: absolute;
+            bottom: 10px;
+            left: 50%;
+            margin-left: -45px;
+            border-radius: 10px;
+            color: #222;
+            cursor: pointer;
 
-    border: 0;
-    border-top: 1px solid #ccc;
-}
+            &:hover {
+                background: lighten(#dedede, 5%);
+                color: lighten(#222, 5%);
+            }
+        }
 
-h1 {
-    font-family: $font-regular;
-}
-
-img {
-    vertical-align: middle;
-}
-
-fieldset {
-    border: 0;
-    margin: 0;
-    padding: 0;
-}
-
-textarea {
-    resize: vertical;
-}
-
-body {
-    font: 16px/26px Helvetica, Helvetica Neue, Arial;
-}
-
-.wrapper {
-    width: 90%;
-    margin: 0 5%;
-}
-
-/* ==============
-    MOBILE: Main
-   ============== */
-
-.main {
-    padding: 30px 0;
-
-    article {
-
-        h1 {
-            font-size: 2em;
+        .ranking {
+            position: absolute;
+            top: 10px;
+            right: 15px;
+            font-size: 60px;
+            color: #00F;
         }
     }
-
-    aside {
-        color: white;
-        padding: 0px 5% 10px;
-    }
 }
-
-

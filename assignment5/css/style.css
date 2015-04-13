@@ -22,7 +22,6 @@
   font-weight: normal;
   font-style: normal;
 }
-
 /* line 27, ../scss/partials/_general.scss */
 .clear {
   clear: both;
@@ -36,13 +35,13 @@
   border-bottom: 20px solid #e44d26;
 }
 
-/* line 40, ../scss/partials/_general.scss */
+/* line 39, ../scss/partials/_general.scss */
 .footer-container,
 .main aside {
   border-top: 20px solid #e44d26;
 }
 
-/* line 46, ../scss/partials/_general.scss */
+/* line 44, ../scss/partials/_general.scss */
 .header-container,
 .footer-container,
 .main aside {
@@ -91,7 +90,7 @@
   width: 1px;
 }
 
-/* line 90, ../scss/partials/_general.scss */
+/* line 89, ../scss/partials/_general.scss */
 .visuallyhidden.focusable:active,
 .visuallyhidden.focusable:focus {
   clip: auto;
@@ -107,7 +106,7 @@
   visibility: hidden;
 }
 
-/* line 104, ../scss/partials/_general.scss */
+/* line 103, ../scss/partials/_general.scss */
 .clearfix:before,
 .clearfix:after {
   content: " ";
@@ -141,7 +140,7 @@ nav a {
   color: white;
   background: #e44d26;
 }
-/* line 38, ../scss/partials/_header.scss */
+/* line 37, ../scss/partials/_header.scss */
 nav a:hover,
 nav a:visited {
   color: white;
@@ -157,91 +156,57 @@ nav a:hover {
   padding: 20px 0;
 }
 
-/* line 20, ../scss/partials/_content.scss */
-html,
-button,
-input,
-select,
-textarea {
-  color: #221;
+/* line 17, ../scss/partials/_content.scss */
+.profiles .profile-container {
+  border-style: solid;
+  border-width: 5px;
+  border-radius: 5px;
+  padding: 20px;
+  display: inline-block;
 }
-
-/* line 24, ../scss/partials/_content.scss */
-body {
-  font-size: 1em;
-  line-height: 1.4;
+/* line 25, ../scss/partials/_content.scss */
+.profiles .profile-content {
+  display: none;
 }
-
 /* line 29, ../scss/partials/_content.scss */
-::-moz-selection {
-  background: #b3d4fc;
-  text-shadow: none;
+.profiles .profile-image-container {
+  border-style: solid;
+  border-width: 2px;
+  border-color: #6e6e6e;
+  display: inline-block;
+  position: relative;
+  background-color: #000;
 }
-
-/* line 34, ../scss/partials/_content.scss */
-::selection {
-  background: #b3d4fc;
-  text-shadow: none;
+/* line 37, ../scss/partials/_content.scss */
+.profiles .profile-image-container .profile-image {
+  width: 300px;
+  height: auto;
 }
-
-/* line 39, ../scss/partials/_content.scss */
-hr {
-  display: block;
-  height: 1px;
-  margin: 1em 0;
-  padding: 0;
-  border: 0;
-  border-top: 1px solid #ccc;
+/* line 42, ../scss/partials/_content.scss */
+.profiles .profile-image-container .profile-image-button {
+  background: #dedede;
+  font-size: 30px;
+  padding: 7px;
+  position: absolute;
+  bottom: 10px;
+  left: 50%;
+  margin-left: -45px;
+  border-radius: 10px;
+  color: #222;
+  cursor: pointer;
 }
-
-/* line 49, ../scss/partials/_content.scss */
-h1 {
-  font-family: "IntelligentSense", Verdana, Arial, sans;
+/* line 54, ../scss/partials/_content.scss */
+.profiles .profile-image-container .profile-image-button:hover {
+  background: #ebebeb;
+  color: #2f2f2f;
 }
-
-/* line 53, ../scss/partials/_content.scss */
-img {
-  vertical-align: middle;
-}
-
-/* line 57, ../scss/partials/_content.scss */
-fieldset {
-  border: 0;
-  margin: 0;
-  padding: 0;
-}
-
-/* line 63, ../scss/partials/_content.scss */
-textarea {
-  resize: vertical;
-}
-
-/* line 67, ../scss/partials/_content.scss */
-body {
-  font: 16px/26px Helvetica, Helvetica Neue, Arial;
-}
-
-/* line 71, ../scss/partials/_content.scss */
-.wrapper {
-  width: 90%;
-  margin: 0 5%;
-}
-
-/* ==============
-    MOBILE: Main
-   ============== */
-/* line 80, ../scss/partials/_content.scss */
-.main {
-  padding: 30px 0;
-}
-/* line 85, ../scss/partials/_content.scss */
-.main article h1 {
-  font-size: 2em;
-}
-/* line 90, ../scss/partials/_content.scss */
-.main aside {
-  color: white;
-  padding: 0px 5% 10px;
+/* line 60, ../scss/partials/_content.scss */
+.profiles .profile-image-container .ranking {
+  position: absolute;
+  top: 10px;
+  right: 15px;
+  font-size: 60px;
+  color: #00F;
 }
 
 /* ==========================================================================
@@ -321,7 +286,7 @@ body {
   /* ====================
       WIDE: CSS3 Effects
      ==================== */
-  /* line 114, ../scss/partials/_media-queries.scss */
+  /* line 113, ../scss/partials/_media-queries.scss */
   .header-container,
   .main aside {
     -webkit-box-shadow: 0 5px 10px #aaa;
@@ -381,7 +346,7 @@ body {
     text-shadow: none !important;
   }
 
-  /* line 175, ../scss/partials/_media-queries.scss */
+  /* line 174, ../scss/partials/_media-queries.scss */
   a,
   a:visited {
     text-decoration: underline;
@@ -400,14 +365,14 @@ body {
   /*
    * Don't show links for images, or javascript/internal links
    */
-  /* line 193, ../scss/partials/_media-queries.scss */
+  /* line 191, ../scss/partials/_media-queries.scss */
   .ir a:after,
   a[href^="javascript:"]:after,
   a[href^="#"]:after {
     content: "";
   }
 
-  /* line 198, ../scss/partials/_media-queries.scss */
+  /* line 197, ../scss/partials/_media-queries.scss */
   pre,
   blockquote {
     border: 1px solid #999;
@@ -420,7 +385,7 @@ body {
     /* h5bp.com/t */
   }
 
-  /* line 208, ../scss/partials/_media-queries.scss */
+  /* line 207, ../scss/partials/_media-queries.scss */
   tr,
   img {
     page-break-inside: avoid;
@@ -433,9 +398,8 @@ body {
 
   @page {
     margin: 0.5cm;
-}
-
-  /* line 222, ../scss/partials/_media-queries.scss */
+  }
+  /* line 220, ../scss/partials/_media-queries.scss */
   p,
   h2,
   h3 {
@@ -443,7 +407,7 @@ body {
     widows: 3;
   }
 
-  /* line 228, ../scss/partials/_media-queries.scss */
+  /* line 227, ../scss/partials/_media-queries.scss */
   h2,
   h3 {
     page-break-after: avoid;

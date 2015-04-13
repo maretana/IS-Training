@@ -1,4 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <jslint>
+	<file name="main.js">
+		<issue line="69" char="75" reason="Missing semicolon." evidence="        $(pData).each(function(index, element){element.ranking = index + 1});" severity="W" />
+	</file>
 </jslint>
 
