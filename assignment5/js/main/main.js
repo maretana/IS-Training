@@ -52,6 +52,37 @@ var IntSenseNamespace = window.IntSenseNamespace || {};
         });
     }
 
+    function renderPage(pData) {
+        processData(pData);
+        var source = $('#profileTemplate').html();
+        var template = Handlebars.compile(source);
+        var html = template(pData);
+        $(document.body).append(html);
+        addEvents();
+    }
+
+    function processData(pData) {
+        var sortFunction = function(a, b) {
+            return b.volume - a.volume; //sort in descendent order
+        };
+        pData.sort(sortFunction);
+        $(pData).each(function(index, element){element.ranking = index + 1});
+    }
+
+    function addEvents() {
+        $('.profile-container').each(function(index, element){
+            var button = $(this).find('.profile-image-button');
+            var content = $(this).find('.profile-content');
+            button.click(function(event){
+                console.log('click');
+                content.toggle();
+                var newText = button.text() === 'Hide' ? 'Show' : 'Hide';
+                button.text(newText);
+                return false;
+            });
+        });
+    }
+
     /**
      * Module.
      *      Module description 
@@ -112,9 +143,7 @@ var IntSenseNamespace = window.IntSenseNamespace || {};
         //Called the methods required to initialize all the modules.
         IntSenseModule.init();
         
-        callAPI().done(function (data) {
-            console.log(data);
-        });
+        callAPI().done(renderPage);
     }
 
     //Init.
