@@ -12,7 +12,6 @@
   * Description: Template to create javascript namespaces and modules
   */
 
-
 /**
  * Namespace declaration. Use the client's name and project. 
  */  
@@ -37,15 +36,20 @@ var IntSenseNamespace = window.IntSenseNamespace || {};
      * @public
      */
     pContext.publicMethod = function () {
-        return "Hello Intelligent Sense.";
+        return 'Hello Intelligent Sense.';
     };
 
     /**
      * Private method
      * private 
      */
-    function privateMethod() {
-        
+    function callAPI() {
+        //http://api.ht.fuseamplify.com/api/artist/top?aggregate=true
+        return $.ajax({
+            url : 'http://api.ht.fuseamplify.com/api/artist/top?aggregate=true',
+            type : 'GET',
+            dataType : 'jsonp'
+        });
     }
 
     /**
@@ -108,7 +112,9 @@ var IntSenseNamespace = window.IntSenseNamespace || {};
         //Called the methods required to initialize all the modules.
         IntSenseModule.init();
         
-        privateMethod();
+        callAPI().done(function (data) {
+            console.log(data);
+        });
     }
 
     //Init.
