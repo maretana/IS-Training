@@ -1,4 +1,19 @@
 'use strict';
+var ArtistsNamespace = window.ArtistsNamespace || {};
+(function(pContext) {
+	pContext.getInitialsArray = function(artistsArray) {
+		var initials = [];
+		for (var i = 0, len = artistsArray.length; i < len; i++) {
+			var artist = artistsArray[i],
+				initial = artist.name.substring(0,1);
+			if (initials.indexOf(initial) === -1) {
+				initials.push(initial);
+			}
+		}
+		return initials;
+	};
+})(ArtistsNamespace);
+
 var app = angular.module('artists', [ ]);
 app.controller('artistsController', ['$scope', '$http', function($scope, $http) {
     $http(
@@ -13,10 +28,13 @@ app.controller('artistsController', ['$scope', '$http', function($scope, $http) 
     ).success(
     	function(response) {
     		$scope.artists = response;
+    		$scope.initials = ArtistsNamespace.getInitialsArray($scope.artists);
+    		$scope.jsonReady = true;
     	}
     ).error(
     	function(data, status, headers, config) {
     		console.log('error');
+    		console.log(arguments);
     	}
     );
 }]);
@@ -37,8 +55,3 @@ app.filter('searchByName', function() {
 	    return filtered;
 	};
 });
-
-var ArtistsNamespace = window.ArtistsNamespace || {};
-(function(pContext) {
-	;
-})(ArtistsNamespace);

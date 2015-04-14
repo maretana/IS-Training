@@ -25,9 +25,13 @@
         <script src="js/vendor/modernizr-2.6.2-respond-1.1.0.min.js"></script>
     </head>
     <body>
-        <div ng-app="artists" ng-controller="artistsController">
-            <p>Filter: <input type="text" ng-model="artistName" /></p>
-            <div>
+        <div ng-app="artists" ng-controller="artistsController" ng-init="jsonReady=false">
+            <section class="initials" ng-show="jsonReady">
+                <a class="initials-filter" href="" ng-click="artistName=''">All</a>
+                <a class="initials-filter" href="" ng-repeat="initial in initials | orderBy" ng-click="$parent.artistName=initial">{{initial}}</a>
+            </section>
+            <p>Filter: <input type="text" ng-model="artistName" ng-init="artistName=''" /></p>
+            <div ng-show="jsonReady">
                 <section class="profile" ng-repeat="artist in artists | searchByName:artistName | orderBy:'+name'">
                     <div class="profile-wrapper">
                         <img ng-src="{{artist.profileImage}}" class="profile-image" alt="Profile Picture"/>
