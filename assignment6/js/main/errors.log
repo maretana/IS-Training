@@ -1,3 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
 <jslint>
+	<file name="angular.js">
+		<issue line="1" char="1" reason="Use the function form of &quot;use strict&quot;." evidence="&apos;use strict&apos;;" severity="W" />
+		<issue line="2" char="11" reason="&apos;angular&apos; is not defined." evidence="var app = angular.module(&apos;artists&apos;, []);" severity="W" />
+		<issue line="15" char="13" reason="&apos;console&apos; is not defined." evidence="    		console.log(response);" severity="W" />
+		<issue line="19" char="13" reason="&apos;console&apos; is not defined." evidence="    		console.log(&apos;error&apos;);" severity="W" />
+	</file>
 </jslint>
+

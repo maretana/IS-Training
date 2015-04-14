@@ -11,7 +11,7 @@ module.exports = function(grunt) {
     watch: {
       // Main JS files
       mainScripts: {
-        files: [BASE_URL + 'js/main/**/*.js', BASE_URL + 'js/main/*.js'],
+        files: [BASE_URL + 'js/main/angular.js'],
         tasks: ['jshint', 'uglify:main'],
         options: {
           spawn: false,
