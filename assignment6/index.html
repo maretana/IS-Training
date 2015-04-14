@@ -26,8 +26,24 @@
     </head>
     <body>
         <div ng-app="artists" ng-controller="artistsController">
-            <p>Name : <input type="text" ng-model="name"/></p>
-            <p ng-bind="name"></p>
+            <p>Filter: <input type="text" ng-model="artistName" /></p>
+            <div>
+                <section ng-repeat="artist in artists | searchByName:artistName">
+                    <img ng-src="{{artist.profileImage}}" width="140" height="140" alt="Profile Picture"/>
+                    <div>
+                        <p ng-bind="artist.name"></p>
+                        <p>
+                            {{artist.stats.tweets}} tweets
+                        </p>
+                        <p>
+                            {{artist.stats.follow}} followers
+                        </p>
+                        <p>
+                            {{artist.stats.retweets}} retweets
+                        </p>
+                    </div>
+                </section>
+            </div>
         </div>
 
         <script src="js/vendor/jquery-1.10.1.min.js"></script>
