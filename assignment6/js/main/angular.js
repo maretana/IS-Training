@@ -21,17 +21,24 @@ app.controller('artistsController', ['$scope', '$http', function($scope, $http) 
     );
 }]);
 app.filter('searchByName', function() {
-	return function(artists, artistName) {
-		artists = artists || [];
-		artistName = artistName || '';
-		var filtered = [];
-		var letterMatch = new RegExp(artistName, 'i');
+	return function(pArtists, pArtistName) {
+		var artists = pArtists || [],		//fix to prevent undefined arguments
+			artistName = pArtistName || '',	//fix to prevent undefined arguments
+			filtered = [],
+			letterMatch = new RegExp(artistName, 'i');
+
 	    for (var i = 0; i < artists.length; i++) {
 	      var item = artists[i];
 	      if (letterMatch.test(item.name.substring(0, artistName.length))) {
 	        filtered.push(item);
 	      }
 	    }
+
 	    return filtered;
 	};
 });
+
+var ArtistsNamespace = window.ArtistsNamespace || {};
+(function(pContext) {
+	;
+})(ArtistsNamespace);

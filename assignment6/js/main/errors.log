@@ -2,8 +2,10 @@
 <jslint>
 	<file name="angular.js">
 		<issue line="1" char="1" reason="Use the function form of &quot;use strict&quot;." evidence="&apos;use strict&apos;;" severity="W" />
+		<issue line="43" char="5" reason="Unnecessary semicolon." evidence="	;" severity="W" />
 		<issue line="2" char="11" reason="&apos;angular&apos; is not defined." evidence="var app = angular.module(&apos;artists&apos;, [ ]);" severity="W" />
 		<issue line="19" char="13" reason="&apos;console&apos; is not defined." evidence="    		console.log(&apos;error&apos;);" severity="W" />
+		<issue line="41" char="24" reason="&apos;window&apos; is not defined." evidence="var ArtistsNamespace = window.ArtistsNamespace || {};" severity="W" />
 	</file>
 </jslint>
 
